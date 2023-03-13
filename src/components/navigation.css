@@ -1,0 +1,12 @@
+
+.links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.lists {
+  text-decoration: none;
+}
