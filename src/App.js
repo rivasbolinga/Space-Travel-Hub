@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/navigation';
+import Profile from './components/Profile';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h2 className="hello">hello friends🥳</h2>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigation />}>
+            <Route path="profile" element={<Profile />} />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
