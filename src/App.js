@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigation />}>
             <Route path="profile" element={<Profile />} />
+            <Route to="/rockets">Rockets</Route>
           </Route>
         </Routes>
       </Router>
