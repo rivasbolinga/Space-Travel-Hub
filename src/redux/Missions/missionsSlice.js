@@ -1,26 +1,28 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 export const fetchMissions = createAsyncThunk(
-  "missions/fetchMissions",
+  'missions/fetchMissions',
   async () => {
-    const response = await axios.get("https://api.spacexdata.com/v3/missions");
+    const response = await axios.get('https://api.spacexdata.com/v3/missions');
     return response.data;
-  }
+  },
 );
 
 const missionsSlice = createSlice({
-  name: "missions",
+  name: 'missions',
   initialState: [],
   reducers: {
     joinMission: (state, action) => {
-      const { id } = action.payload;
-      return state.map((mission) => {
+      const id = action.payload;
+      const newState = state.map((mission) => {
         if (mission.mission_id !== id) {
           return mission;
         }
         return { ...mission, reserved: true };
       });
+      console.log(newState);
+      return newState;
     },
     leavingMission: (state, action) => {
       const { id } = action.payload;
