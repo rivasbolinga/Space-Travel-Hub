@@ -1,0 +1,25 @@
+
+.my-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#img {
+  width: 280px;
+  height: 280px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#btn {
+  background-color: blue;
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
