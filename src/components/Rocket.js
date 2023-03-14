@@ -10,18 +10,24 @@ export default function Rockets() {
     dispatch(fetchRockets());
   }, [dispatch]);
 
+  const handleReservation = (rocketId) => {
+    // Ovdje dodajte kôd za rezervaciju rakete s ID-om rocketId
+    console.log(`Raketa ${rocketId} rezervirana`);
+  };
+
   return (
-    <div>
-      <h2>Rockets</h2>
+    <div className="rockets-container">
       <ul>
         {rockets.map((rocket) => (
-          <li key={rocket.id}>
-            <h3>{rocket.rocket_name}</h3>
-            <p>{rocket.description}</p>
-            {rocket.flickr_images.map((image) => (
-              <img key={image} src={image} alt={`Rocket ${rocket.id}`} />
-            ))}
-
+          <li className="lele" key={rocket.id}>
+            {rocket.flickr_images.length > 0 && (
+              <img className="raketineslike" src={rocket.flickr_images[0]} alt={`Rocket ${rocket.id}`} />
+            )}
+            <div className="nasloviopis">
+              <h3>{rocket.name}</h3>
+              <p>{rocket.description}</p>
+              <button type="button" onClick={() => handleReservation(rocket.id)}>Reservation</button>
+            </div>
           </li>
         ))}
       </ul>
