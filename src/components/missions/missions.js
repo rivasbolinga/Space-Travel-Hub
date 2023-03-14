@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions, selectMissions } from '../../redux/Missions/missionsSlice';
+import { fetchMissions, selectMissions, joinMission,leavingMission } from '../../redux/Missions/missionsSlice';
 import './missions.css';
+
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -10,6 +11,10 @@ const Missions = () => {
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
+
+  const handleClick = () => {
+
+  }
 
   return (
     <section className="missions-section">
