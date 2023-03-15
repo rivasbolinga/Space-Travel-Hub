@@ -15,14 +15,14 @@ const Missions = () => {
     <section className="missions-section">
       <h2 className="missions-title">Missions</h2>
       <table className="table-container">
-        <thread className="mission-th">
+        <thead className="mission-th">
           <tr className="mission-tr">
             <th className="column-title">Missions</th>
             <th className="column-title">Description</th>
             <th className="column-title">Status</th>
             <th className="column-title">Action</th>
           </tr>
-        </thread>
+        </thead>
         <tbody className="table-body">
           {missions.map((mission) => (
             <tr key={mission.mission_id} className="missions">
