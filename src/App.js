@@ -6,13 +6,17 @@ import Navigation from './components/navigation';
 import Profile from './components/Profile';
 import Missions from './components/missions/missions';
 import Rockets from './components/Rocket';
-import Dragon from './components/Dragon';
+import { fetchDragons } from './redux/Dragons/dragonSlice';
 import { fetchMissions } from './redux/Missions/missionsSlice';
+import { fetchRockets } from './redux/Rockets/rocketSlice';
+import Dragon from './components/Dragon';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMissions());
+    dispatch(fetchDragons());
+    dispatch(fetchRockets());
   }, [dispatch]);
 
   return (

@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchDragons, selectDragons } from '../redux/Dragons/dragonSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { selectDragons } from '../redux/Dragons/dragonSlice';
 import './dragon.css';
 
 function Dragon() {
-  const dispatch = useDispatch();
   const dragons = useSelector(selectDragons);
-
-  useEffect(() => {
-    dispatch(fetchDragons());
-  }, [dispatch]);
-
   return (
     <div>
       <ul>

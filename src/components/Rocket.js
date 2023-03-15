@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  fetchRockets, selectAllRockets, bookRockets,
-} from '../redux/Rockets/rocketSlice';
+import { selectAllRockets, bookRockets } from '../redux/Rockets/rocketSlice';
 
 export default function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector(selectAllRockets);
-
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
 
   const handleReservation = (rocketId) => {
     dispatch(bookRockets(rocketId));
