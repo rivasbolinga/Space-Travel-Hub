@@ -15,24 +15,6 @@ function Dragon() {
   const handleReservation = (dragonId) => {
     dispatch(bookDragons(dragonId));
   };
-
-  // return (
-  //   <div>
-  //     <ul>
-  //       {dragons.map((dragon) => (
-  //         <div key={dragon.id} className="my-list">
-  //           <div>
-  //             {dragon.image && (
-  //             <img id="img" src={dragon.image} alt={`Dragon ${dragon.id}`} />
-  //             )}
-  //           </div>
-  //           <div>
-  //             <h3>{dragon.name}</h3>
-  //             <h4>{dragon.type}</h4>
-  //             <p>
-  //               {dragon.isReserved && <span className="reserved-badge">Reserved</span>}
-  //               {dragon.description}
-  //             </p>\
   return (
     <div className="rockets-container">
       <ul>
