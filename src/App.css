@@ -3,8 +3,10 @@
 }
 
 .raketineslike {
-  width: 30%;
+  width: 200px;
+  height: 200px;
   margin-top: 1rem;
+  object-fit: cover;
 }
 
 .lele {
