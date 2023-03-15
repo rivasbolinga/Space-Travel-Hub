@@ -17,6 +17,7 @@
   align-items: center;
   margin-bottom: 1rem;
   margin-left: 2rem;
+  border-bottom: 1px solid #c3c1c1;
 }
 
 .logo img {
