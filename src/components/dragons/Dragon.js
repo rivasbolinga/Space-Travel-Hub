@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   fetchDragons, selectAllDragons, bookDragons,
-} from '../redux/Dragons/dragonSlice';
+} from '../../redux/Dragons/dragonSlice';
 import './dragon.css';
 
 function Dragon() {
@@ -15,7 +15,6 @@ function Dragon() {
   const handleReservation = (dragonId) => {
     dispatch(bookDragons(dragonId));
   };
-
   return (
     <div className="rockets-container">
       <ul>
@@ -36,7 +35,7 @@ function Dragon() {
                   <button className="cancel-btn" type="button" onClick={() => handleReservation(dragon.id, true)}>Cancel reservation</button>
                 </div>
               ) : (
-                <button className="btn" type="button" onClick={() => handleReservation(dragon.id, false)}>Reserve rocket</button>
+                <button className="btn" type="button" onClick={() => handleReservation(dragon.id, false)}>Reserve dragon</button>
               )}
             </div>
           </li>

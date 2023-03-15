@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import Navigation from './components/navigation';
-import Profile from './components/Profile';
+import Navigation from './components/Navbar/navigation';
+import Profile from './components/profile/Profile';
 import Missions from './components/missions/missions';
-import Rockets from './components/Rocket';
+import Rockets from './components/rockets/Rocket';
 import { fetchDragons } from './redux/Dragons/dragonSlice';
 import { fetchMissions } from './redux/Missions/missionsSlice';
 import { fetchRockets } from './redux/Rockets/rocketSlice';
-import Dragon from './components/Dragon';
+import Dragon from './components/dragons/Dragon';
 
 function App() {
   const dispatch = useDispatch();
