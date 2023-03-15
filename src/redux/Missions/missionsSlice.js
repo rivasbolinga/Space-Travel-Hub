@@ -1,13 +1,10 @@
 import { createSlice, createAsyncThunk, createAction } from '@reduxjs/toolkit';
-import axios from 'axios';
 
-export const fetchMissions = createAsyncThunk(
-  'missions/fetchMissions',
-  async () => {
-    const response = await axios.get('https://api.spacexdata.com/v3/missions');
-    return response.data;
-  },
-);
+export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
+  const response = await fetch('https://api.spacexdata.com/v3/missions');
+  const data = await response.json();
+  return data;
+});
 export const joinMission = createAction('missions/joinMission');
 
 const missionsSlice = createSlice({
