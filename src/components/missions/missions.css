@@ -21,6 +21,10 @@ th {
   border: 1px solid black;
 }
 
+th {
+  background-color: white;
+}
+
 tr:nth-child(odd) {
   background-color: #eeeeeeab;
 }
@@ -49,4 +53,13 @@ tr:nth-child(odd) {
 
 .mission-name {
   font-weight: bold;
+}
+
+.joined {
+  border-color: red;
+  color: red;
+}
+
+.active-member {
+  background-color: rgb(47, 143, 143);
 }
