@@ -5,7 +5,6 @@ import './missions.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector(selectMissions);
 
   useEffect(() => {
     dispatch(fetchMissions());
@@ -13,8 +12,8 @@ const Missions = () => {
 
   const handleClick = (id) => {
     dispatch(joinMission(id));
-    console.log(missions);
   };
+  const missions = useSelector(selectMissions);
 
   return (
     <section className="missions-section">
@@ -35,10 +34,16 @@ const Missions = () => {
               <td className="mission-description">{mission.description}</td>
               <td>
                 <p className="mission-status">NOT A MEMBER</p>
+                <p className="mission-joined">
+                  joined
+                  {mission.joined}
+                </p>
               </td>
               <td className="mission-join">
                 <button
-                  onClick={() => { handleClick(mission.mission_id); }}
+                  onClick={() => {
+                    handleClick(mission.mission_id);
+                  }}
                   type="button"
                   className="join-btn"
                 >
