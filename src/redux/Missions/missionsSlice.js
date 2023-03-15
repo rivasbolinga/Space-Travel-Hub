@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, createAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const fetchMissions = createAsyncThunk(
@@ -8,6 +8,7 @@ export const fetchMissions = createAsyncThunk(
     return response.data;
   },
 );
+export const joinMission = createAction('missions/joinMission');
 
 const missionsSlice = createSlice({
   name: 'missions',
@@ -27,7 +28,7 @@ const missionsSlice = createSlice({
       });
     },
     leavingMission: (state, action) => {
-      const { id } = action.payload;
+      const id = action.payload;
       return state.map((mission) => {
         if (mission.mission_id !== id) {
           return mission;
@@ -37,11 +38,21 @@ const missionsSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchMissions.fulfilled, (state, action) => action.payload);
+    builder
+      .addCase(fetchMissions.fulfilled, (state, action) => action.payload)
+      .addCase(joinMission, (state, action) => {
+        const id = action.payload;
+        return state.map((mission) => {
+          if (mission.mission_id !== id) {
+            return mission;
+          }
+          return { ...mission, joined: true };
+        });
+      });
   },
 });
 
-export const { joinMission, leavingMission } = missionsSlice.actions;
+export const { leavingMission } = missionsSlice.actions;
 
 export const selectMissions = (state) => state.missions;
 

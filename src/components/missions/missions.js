@@ -19,35 +19,36 @@ const Missions = () => {
     <section className="missions-section">
       <h2 className="missions-title">Missions</h2>
       <table className="table-container">
-        <thread className="mission-th">
+        <thead className="mission-th">
           <tr className="mission-tr">
             <th className="column-title">Missions</th>
             <th className="column-title">Description</th>
             <th className="column-title">Status</th>
             <th className="column-title">Action</th>
           </tr>
-        </thread>
+        </thead>
         <tbody className="table-body">
           {missions.map((mission) => (
             <tr key={mission.mission_id} className="missions">
               <td className="mission-name">{mission.mission_name}</td>
               <td className="mission-description">{mission.description}</td>
               <td>
-                <p className="mission-status">NOT A MEMBER</p>
-                <p className="mission-joined">
-                  joined
-                  {mission.joined}
-                </p>
+                {mission.joined ? (
+                  <p className="mission-joined">Active Member</p>
+                ) : (
+                  <p className="mission-status">NOT A MEMBER</p>
+                )}
               </td>
               <td className="mission-join">
+
                 <button
                   onClick={() => {
                     handleClick(mission.mission_id);
                   }}
                   type="button"
-                  className="join-btn"
+                  className={`join-btn ${mission.joined ? 'joined' : ''}`}
                 >
-                  Join Mission
+                  {mission.joined ? 'LEAVE MISSION' : 'JOIN MISSION'}
                 </button>
               </td>
             </tr>
