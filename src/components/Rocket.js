@@ -26,14 +26,17 @@ export default function Rockets() {
             )}
             <div className="nasloviopis">
               <h3>{rocket.name}</h3>
-              <p>{rocket.description}</p>
+              <p>
+                {rocket.isReserved && <span className="reserved-badge">Reserved</span>}
+                {rocket.description}
+              </p>
+
               {rocket.isReserved ? (
                 <div>
-                  <span className="badge reserved-badge">Reserved</span>
-                  <button type="button" onClick={() => handleReservation(rocket.id, true)}>Cancel reservation</button>
+                  <button className="cancel" type="button" onClick={() => handleReservation(rocket.id, true)}>Cancel reservation</button>
                 </div>
               ) : (
-                <button type="button" onClick={() => handleReservation(rocket.id, false)}>Reserve rocket</button>
+                <button className="reserv" type="button" onClick={() => handleReservation(rocket.id, false)}>Reserve rocket</button>
               )}
             </div>
           </li>
