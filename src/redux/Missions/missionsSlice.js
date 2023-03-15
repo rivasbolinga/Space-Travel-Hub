@@ -16,14 +16,11 @@ const missionsSlice = createSlice({
   reducers: {
     joinMission: (state, action) => {
       const id = action.payload;
-      console.log(state);
       return state.map((mission) => {
-        console.log(mission);
         if (mission.mission_id !== id) {
           return mission;
         }
         const newMission = { ...mission, joined: true };
-        console.log(newMission);
         return newMission;
       });
     },
@@ -33,22 +30,13 @@ const missionsSlice = createSlice({
         if (mission.mission_id !== id) {
           return mission;
         }
-        return { ...mission, reserved: false };
+        return { ...mission, joined: false };
       });
     },
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchMissions.fulfilled, (state, action) => action.payload)
-      .addCase(joinMission, (state, action) => {
-        const id = action.payload;
-        return state.map((mission) => {
-          if (mission.mission_id !== id) {
-            return mission;
-          }
-          return { ...mission, joined: true };
-        });
-      });
+      .addCase(fetchMissions.fulfilled, (state, action) => action.payload);
   },
 });
 

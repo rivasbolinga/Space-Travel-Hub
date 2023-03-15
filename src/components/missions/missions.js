@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions, joinMission, selectMissions } from '../../redux/Missions/missionsSlice';
+import {
+  fetchMissions, joinMission, leavingMission, selectMissions,
+} from '../../redux/Missions/missionsSlice';
 import './missions.css';
 
 const Missions = () => {
@@ -10,8 +12,12 @@ const Missions = () => {
     dispatch(fetchMissions());
   }, [dispatch]);
 
-  const handleClick = (id) => {
-    dispatch(joinMission(id));
+  const handleClick = (mission, id) => {
+    if (mission.joined) {
+      dispatch(leavingMission(id));
+    } else {
+      dispatch(joinMission(id));
+    }
   };
   const missions = useSelector(selectMissions);
 
@@ -33,17 +39,18 @@ const Missions = () => {
               <td className="mission-name">{mission.mission_name}</td>
               <td className="mission-description">{mission.description}</td>
               <td>
-                {mission.joined ? (
-                  <p className="mission-joined">Active Member</p>
-                ) : (
-                  <p className="mission-status">NOT A MEMBER</p>
-                )}
+                <p
+                  className={`mission-status ${
+                    mission.joined ? 'active-member' : ''
+                  }`}
+                >
+                  {mission.joined ? 'ACTIVE MEMBER' : 'NOT A MEMBER'}
+                </p>
               </td>
               <td className="mission-join">
-
                 <button
                   onClick={() => {
-                    handleClick(mission.mission_id);
+                    handleClick(mission, mission.mission_id);
                   }}
                   type="button"
                   className={`join-btn ${mission.joined ? 'joined' : ''}`}
