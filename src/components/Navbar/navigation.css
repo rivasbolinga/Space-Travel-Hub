@@ -2,13 +2,16 @@
 .links {
   display: flex;
   list-style-type: none;
-  text-decoration: underline;
   margin-left: auto;
   color: blue;
   gap: 20px;
 }
 
-.lists {
+.active {
+  text-decoration: underline;
+}
+
+.inactive {
   text-decoration: none;
 }
 

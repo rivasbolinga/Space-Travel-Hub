@@ -10,10 +10,10 @@ function Navigation() {
         <img src={planetLogo} alt="Space Travel Hub logo" />
         <h1>Space Travel Hub</h1>
         <ul className="links">
-          <li><NavLink to="/" className="lists">Rockets</NavLink></li>
-          <li><NavLink to="dragons" className="lists">Dragons</NavLink></li>
-          <li><NavLink to="missions" className="lists">Missions</NavLink></li>
-          <li><NavLink to="profile" className="lists">My Profile</NavLink></li>
+          <li><NavLink to="/" exact className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Rockets</NavLink></li>
+          <li><NavLink to="dragons" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Dragons</NavLink></li>
+          <li><NavLink to="missions" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Missions</NavLink></li>
+          <li><NavLink to="profile" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>My Profile</NavLink></li>
         </ul>
       </div>
       <Outlet />
