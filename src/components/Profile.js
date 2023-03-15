@@ -2,10 +2,12 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectMissions } from '../redux/Missions/missionsSlice';
 import { selectAllRockets } from '../redux/Rockets/rocketSlice';
+import { selectAllDragons } from '../redux/Dragons/dragonSlice';
 import './Profile.css';
 
 function Profile() {
   const reservedRockets = useSelector(selectAllRockets).filter((rocket) => rocket.isReserved);
+  const reservedDragons = useSelector(selectAllDragons).filter((dragon) => dragon.isReserved);
   const joinedMissions = useSelector(selectMissions).filter((mission) => mission.joined);
   return (
     <div className="booked-elements">
@@ -19,6 +21,16 @@ function Profile() {
           ))}
         </div>
       </div>
+      <div className="column rockets">
+        <h2>My Dragons</h2>
+        <div className="booked-div">
+          {reservedDragons.map((dragon) => (
+            <p key={dragon.id} className="booked-element">
+              {dragon.name}
+            </p>
+          ))}
+        </div>
+      </div>
       <div className="column missions">
         <h2 className="missions-titl">My missions</h2>
         <div className="booked-div">
@@ -28,9 +40,6 @@ function Profile() {
             </p>
           ))}
         </div>
-      </div>
-      <div className="column dragons">
-        <h2>My dragons</h2>
       </div>
     </div>
   );
