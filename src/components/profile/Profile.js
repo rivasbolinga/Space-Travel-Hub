@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectMissions } from '../redux/Missions/missionsSlice';
-import { selectAllRockets } from '../redux/Rockets/rocketSlice';
-import { selectAllDragons } from '../redux/Dragons/dragonSlice';
+import { selectMissions } from '../../redux/Missions/missionsSlice';
+import { selectAllRockets } from '../../redux/Rockets/rocketSlice';
+import { selectAllDragons } from '../../redux/Dragons/dragonSlice';
 import './Profile.css';
 
 function Profile() {
