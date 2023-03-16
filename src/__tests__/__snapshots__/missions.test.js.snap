@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions component renders correctly 1`] = `
+<section
+  className="missions-section"
+>
+  <h2
+    className="missions-title"
+  >
+    Missions
+  </h2>
+  <table
+    className="table-container"
+  >
+    <thead
+      className="mission-th"
+    >
+      <tr
+        className="mission-tr"
+      >
+        <th
+          className="column-title"
+        >
+          Missions
+        </th>
+        <th
+          className="column-title"
+        >
+          Description
+        </th>
+        <th
+          className="column-title"
+        >
+          Status
+        </th>
+        <th
+          className="column-title"
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+</section>
+`;
+
+exports[`Missions renders correctly 1`] = `
+<section
+  className="missions-section"
+>
+  <h2
+    className="missions-title"
+  >
+    Missions
+  </h2>
+  <table
+    className="table-container"
+  >
+    <thead
+      className="mission-th"
+    >
+      <tr
+        className="mission-tr"
+      >
+        <th
+          className="column-title"
+        >
+          Missions
+        </th>
+        <th
+          className="column-title"
+        >
+          Description
+        </th>
+        <th
+          className="column-title"
+        >
+          Status
+        </th>
+        <th
+          className="column-title"
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+</section>
+`;
+
+exports[`missions reducer renders correctly 1`] = `
+<section
+  className="missions-section"
+>
+  <h2
+    className="missions-title"
+  >
+    Missions
+  </h2>
+  <table
+    className="table-container"
+  >
+    <thead
+      className="mission-th"
+    >
+      <tr
+        className="mission-tr"
+      >
+        <th
+          className="column-title"
+        >
+          Missions
+        </th>
+        <th
+          className="column-title"
+        >
+          Description
+        </th>
+        <th
+          className="column-title"
+        >
+          Status
+        </th>
+        <th
+          className="column-title"
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+</section>
+`;
+
+exports[`renders correctly 1`] = `
+<section
+  className="missions-section"
+>
+  <h2
+    className="missions-title"
+  >
+    Missions
+  </h2>
+  <table
+    className="table-container"
+  >
+    <thead
+      className="mission-th"
+    >
+      <tr
+        className="mission-tr"
+      >
+        <th
+          className="column-title"
+        >
+          Missions
+        </th>
+        <th
+          className="column-title"
+        >
+          Description
+        </th>
+        <th
+          className="column-title"
+        >
+          Status
+        </th>
+        <th
+          className="column-title"
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+</section>
+`;

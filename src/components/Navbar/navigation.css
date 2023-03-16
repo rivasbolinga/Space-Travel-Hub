@@ -1,0 +1,38 @@
+
+.links {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  color: blue;
+  gap: 20px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-bottom: 1px solid #c3c1c1;
+}
+
+.logo img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+a {
+  color: blue;
+}
