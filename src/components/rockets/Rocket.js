@@ -10,8 +10,10 @@ export default function Rockets() {
   const rockets = useSelector(selectAllRockets);
 
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (!rockets.length) {
+      dispatch(fetchRockets());
+    }
+  }, [dispatch, rockets]);
 
   const handleReservation = (rocketId) => {
     dispatch(bookRockets(rocketId));

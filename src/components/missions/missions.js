@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission, leavingMission, selectMissions } from '../../redux/Missions/missionsSlice';
+import {
+  fetchMissions, joinMission, leavingMission, selectMissions,
+} from '../../redux/Missions/missionsSlice';
 import './missions.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
+  const missions = useSelector(selectMissions);
+  useEffect(() => {
+    if (!missions.length) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions]);
+
   const handleClick = (mission, id) => {
     if (mission.joined) {
       dispatch(leavingMission(id));
@@ -12,7 +21,6 @@ const Missions = () => {
       dispatch(joinMission(id));
     }
   };
-  const missions = useSelector(selectMissions);
 
   return (
     <section className="missions-section">

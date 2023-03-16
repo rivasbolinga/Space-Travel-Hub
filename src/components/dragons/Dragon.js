@@ -8,9 +8,12 @@ import './dragon.css';
 function Dragon() {
   const dispatch = useDispatch();
   const dragons = useSelector(selectAllDragons);
+
   useEffect(() => {
-    dispatch(fetchDragons());
-  }, [dispatch]);
+    if (!dragons.length) {
+      dispatch(fetchDragons());
+    }
+  }, [dispatch, dragons]);
 
   const handleReservation = (dragonId) => {
     dispatch(bookDragons(dragonId));
