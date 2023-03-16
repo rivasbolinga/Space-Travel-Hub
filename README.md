@@ -1,4 +1,4 @@
-## Book-Store-React-Redux-project
+## Space-Travel-Hub-React-Redux-project
 
 <a name="readme-top"></a>
 
@@ -55,7 +55,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>(https://spacex-3bz6.onrender.com/)
 
-- <a href="">Coming Soo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
