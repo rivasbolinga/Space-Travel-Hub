@@ -53,9 +53,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>(coming soon)
+## 🚀 Live Demo <a name="live-demo"></a>(https://spacex-3bz6.onrender.com/)
 
-<!-- - <a href="">Coming Soon</a> -->
+- <a href="">Coming Soo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
