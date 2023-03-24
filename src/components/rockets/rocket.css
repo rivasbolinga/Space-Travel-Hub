@@ -10,6 +10,7 @@ body {
   align-items: center;
   gap: 20px;
 }
+
 .raketineslike {
   width: 200px;
   height: 200px;
@@ -29,20 +30,20 @@ body {
   margin: 1rem;
 }
 
-
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 @media (min-width: 1000px) {
-  
   .rockets-container li {
-  width: 80%;
-}
-.raketineslike {
-  width: 300px;
-  height: auto;
-  margin-top: 1rem;
-  object-fit: cover;
-}
+    width: 80%;
+  }
+
+  .raketineslike {
+    width: 300px;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+  }
 }

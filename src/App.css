@@ -1,23 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Orbitron:wght@400;800&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Orbitron:wght@400;800&display=swap');
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  line-height: 25px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
 
-
-  h1,h2,h3 {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    line-height: 25px;
-    word-spacing: 1px;
-    letter-spacing: 2px;
-    font-weight: 800;
-  }
-  p {
-     font-family: 'Orbitron', sans-serif;
-    color: white;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    line-height: 27px;
-  }
+p {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 27px;
+}
 
 .reserved-badge {
   background: none;
@@ -39,6 +40,10 @@ button {
   border: 2px solid rgb(90, 174, 157);
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 2px;
+}
+
+button:hover {
+  filter: brightness(150%);
 }
 
 .cancel {

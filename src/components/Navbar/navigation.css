@@ -3,7 +3,7 @@
   display: flex;
   list-style-type: none;
   margin-left: auto;
-  color: rgb(218, 187, 33);
+  color: rgb(224, 122, 20);
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 2px;
   gap: 20px;
@@ -22,24 +22,23 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
 }
 
 .logo img {
   height: 5rem;
   margin-right: 1rem;
-
 }
 
 .logo h1 {
   font-size: 2rem;
   margin: 0;
-  color: rgb(14, 123, 86);
+  color: rgb(73, 225, 220);
   letter-spacing: 2px;
   word-spacing: 4px;
   line-height: 20px;
 }
 
 a {
-  color: rgb(255, 187, 0);
+  color: rgb(220, 135, 50);
 }
