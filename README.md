@@ -1,4 +1,20 @@
-## Space-Travel-Hub-React-Redux-project
+<div align="center">
+  <img
+          alt="world glove icon"
+          src="https://user-images.githubusercontent.com/103900838/227566312-0ecb18dc-64b8-4bb4-948d-ecdd8a540638.png"
+          width="140"  height="auto" 
+        />
+  <br/>
+  
+# 🚀🚀🚀🚀 SPACE TRAVEL HUB  <a name="about-project"></a>
+
+ <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
+**SPACE TRAVEL HUB** is a webapp where your can read about our rockets, missions and rockets and you can book your favourite ones and store them in your profile.
+
+![laptop](https://user-images.githubusercontent.com/103900838/227567521-4a59b1d3-e582-4898-b1c6-004629c40ce4.png)
+
+</div>
 
 <a name="readme-top"></a>
 
@@ -11,7 +27,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [LOOM PROJECT PRESENTATION ](#loom-project-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -27,93 +42,96 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 Book-Store-React Project <a name="about-project"></a>
-
-**React/Redux Group Project** is a single webpage  Application that displays the rockets, dragons, missions and profile.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-***For this project we used the Following tech-stack:
+### Tech Stack <a name="tech-stack"></a>
 
-- JSX
-- CSS
-- React JS
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+<img align="center" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="react" width="60" height="60"/></a>
+<a href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
+<img align="center" src="https://user-images.githubusercontent.com/103900838/222968100-66b1cdba-dcbe-4047-a88f-3f55ccf983ee.svg" alt="redux" width="60" height="60"/></a>
+<a href="https://jestjs.io/" target="_blank"><img align="center" src="https://user-images.githubusercontent.com/103900838/219062261-8a9b9a82-2967-4e21-abff-42005e4e6048.svg" alt="jest" width="55" height="55"/></a>
+
+
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
--[x] **Rockets**
--[x] **Dragons**
--[x] **Missions**
--[x] **Profile**
+<!-- > Describe between 1-3 key features of the application.-->
+
+- [ ] **Rocket page: where you can see a full list of all the rockets and its details, book a rocket or cancel the booking**
+- [ ] **Dragon page: where you can see a full list of all the dragons and its details, book a dragon or cancel the booking**
+- [ ] **Missions page: where you can see a full list of all the missions and its details, join a mission or cancel it**
+- [ ] **My profile: you can see al your bookings**
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>(https://spacex-3bz6.onrender.com/)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Loom Walkthrough -->
-## LOOM PROJECT PRESENTATION <a name="loom-demo"></a>
-
-- [Loom Walkthrough Link](coming soon)
+You can see the live version 📍 [here](https://641d8d7503d0240008449391--lucent-yeot-9e456d.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
+To get a local copy up and running, follow these steps.
+
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project, you need:
 
-1. npm 
-use the following link to setup npm if you dont have it already installed on your computer 
-<p align="left">(<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">install npm</a>)</p>
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
 
 ### Setup
 
-Clone this repository to your desired folder using the command below:
+- [ ] Link your PC to GitHub
+- [ ] Clone this repository to your desired folder:
 
-### Clone this repository
 
-```bash
-$ git clone https://github.com/Bigizi/Space-Travel-Hub
-$ cd Space-Travel-Hub
 ```
 
-### Install
-
-Below  are the sets to Install this project with:
-
-1. Have a file to check for linter errors.
-
-2. Install NPM packages.
-```sh
-   npm install
-   ```
-
-### Usage
-
-### Run project
-To run the project:
-```bash
-$ npm install
-$ npm start # this will make webpack watching for your changes in code
+git clone https://github.com/rivasbolinga/Countries-React-Redux.git
 ```
 
-### Open page in browser
-```bash
-$ npm start
+
+- [ ] Open the file in your code editor
+
+
+
+
+###  Instal linters for React and Redux:
+
+Here the link to install your linters: https://github.com/microverseinc/linters-config
+
+
+###  Run test linters:
+
+To run Stylelint and ESLint tests, run the following commands respectively:
+
 ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx eslint "**/*.{js,jsx}"
+
+```
+###  Deployment:
+ I have deployed it with netifly.
 
 <!-- AUTHORS -->
 
@@ -140,7 +158,7 @@ $ npm start
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add good UI/UX Design**
+- [ ] **mobile version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
