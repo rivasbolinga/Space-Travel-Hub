@@ -28,14 +28,13 @@ function Dragon() {
             )}
             <div className="nasloviopis">
               <h3>{dragon.name}</h3>
-              <h4>{dragon.type}</h4>
               <p>
-                {dragon.isReserved && <span className="reserved">Reserved</span>}
+                {dragon.isReserved && <span className="reserved-badge">Reserved</span>}
                 {dragon.description}
               </p>
               {dragon.isReserved ? (
                 <div>
-                  <button className="cancel-btn" type="button" onClick={() => handleReservation(dragon.id, true)}>Cancel reservation</button>
+                  <button className="cancel" type="button" onClick={() => handleReservation(dragon.id, true)}>Cancel reservation</button>
                 </div>
               ) : (
                 <button className="btn" type="button" onClick={() => handleReservation(dragon.id, false)}>Reserve dragon</button>

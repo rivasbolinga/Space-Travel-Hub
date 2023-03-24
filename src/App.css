@@ -16,4 +16,37 @@
     color: white;
     word-spacing: 2px;
     letter-spacing: 2px;
+    line-height: 27px;
   }
+
+.reserved-badge {
+  background: none;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 8px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  border: 2px solid rgb(90, 174, 157);
+}
+
+button {
+  background-color: rgb(33, 76, 80);
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 2px solid rgb(90, 174, 157);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.cancel {
+  background-color: rgb(243, 161, 10);
+  border-radius: 6px;
+  border: 2px solid rgb(240, 218, 117);
+  padding: 7px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+}
