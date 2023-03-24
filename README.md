@@ -74,7 +74,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://641d8d7503d0240008449391--lucent-yeot-9e456d.netlify.app/)
+You can see the live version 📍 [here](https://fastidious-sable-3bb07a.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
