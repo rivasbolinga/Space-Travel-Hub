@@ -104,7 +104,7 @@ In order to run this project, you need:
 
 ```
 
-git clone https://github.com/rivasbolinga/Countries-React-Redux.git
+git clone git@github.com:rivasbolinga/Space-Travel-Hub.git
 ```
 
 
@@ -112,8 +112,12 @@ git clone https://github.com/rivasbolinga/Countries-React-Redux.git
 
 
 
+###  Instal:
+```
 
-###  Instal linters for React and Redux:
+npm install
+```
+
 
 Here the link to install your linters: https://github.com/microverseinc/linters-config
 
@@ -130,8 +134,12 @@ npx stylelint "**/*.{css,scss}"
 npx eslint "**/*.{js,jsx}"
 
 ```
-###  Deployment:
- I have deployed it with netifly.
+###  Live:
+
+```
+npm start
+
+```
 
 <!-- AUTHORS -->
 
