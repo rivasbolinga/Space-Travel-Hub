@@ -5,28 +5,42 @@
 .table-container {
   margin: 40px;
   border-collapse: collapse;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .mission-th {
   font-size: 20px;
   display: table-header-group;
   vertical-align: middle;
-  border-color: black;
+  border-color: rgb(88, 18, 18);
 }
 
 td,
 th {
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(135, 135, 135);
 }
 
 th {
-  background-color: white;
+  background-color: rgba(22, 34, 44, 0.871);
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(241, 184, 79);
 }
 
 tr:nth-child(odd) {
-  background-color: #eeeeeeab;
+  background-color: #eeeeee83;
+  color: rgb(15, 23, 30);
+  line-height: 25px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  color: rgb(241, 240, 239);
+  line-height: 25px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  background-color: rgba(15, 23, 30, 0.666);
 }
 
 .table-body {
@@ -44,20 +58,14 @@ tr:nth-child(odd) {
   border-radius: 5px;
 }
 
-.join-btn {
-  background: none;
-  border: 1px solid rgb(107, 106, 106);
-  border-radius: 6px;
-  width: 80px;
-}
-
 .mission-name {
   font-weight: bold;
 }
 
 .joined {
-  border-color: red;
-  color: red;
+  border-color: rgb(122, 7, 7);
+  color: rgb(154, 29, 29);
+  background: none;
 }
 
 .active-member {

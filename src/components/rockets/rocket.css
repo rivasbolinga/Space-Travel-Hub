@@ -1,3 +1,16 @@
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
+}
+
+.rockets-container ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .raketineslike {
   width: 200px;
   height: 200px;
@@ -7,36 +20,30 @@
 
 .lele {
   display: flex;
+  background-color: rgba(22, 34, 44, 0.939);
+  border-radius: 10px;
+  border: 2px solid  rgb(33, 76, 80);
+  padding: 20px;
 }
 
 .nasloviopis {
   margin: 1rem;
 }
 
-.reserved-badge {
-  background-color: blue;
-  color: white;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-
-.reserv {
-  background-color: blue;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
-  border: hidden;
-}
-
-.cancel {
-  background-color: white;
-  border-radius: 7px;
-  padding: 7px;
-}
-
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .rockets-container li {
+    width: 80%;
+  }
+
+  .raketineslike {
+    width: 300px;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+  }
 }

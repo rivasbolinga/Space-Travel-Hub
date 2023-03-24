@@ -1,41 +1,57 @@
-.hello {
-  color: red;
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Orbitron:wght@400;800&display=swap');
+
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  line-height: 25px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 800;
 }
 
-.raketineslike {
-  width: 200px;
-  height: 200px;
-  margin-top: 1rem;
-  object-fit: cover;
-}
-
-.lele {
-  display: flex;
-}
-
-.nasloviopis {
-  margin: 1rem;
+p {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 27px;
 }
 
 .reserved-badge {
-  background-color: blue;
+  background: none;
   color: white;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
-  margin-right: 8px;
+  margin: 8px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  border: 2px solid rgb(90, 174, 157);
 }
 
-.reserv {
-  background-color: blue;
+button {
+  background-color: rgb(33, 76, 80);
   color: white;
-  padding: 7px;
-  border-radius: 4px;
-  border: hidden;
+  padding: 15px;
+  border-radius: 6px;
+  border: 2px solid rgb(90, 174, 157);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  filter: brightness(150%);
 }
 
 .cancel {
-  background-color: white;
-  border-radius: 7px;
+  background-color: rgb(243, 161, 10);
+  border-radius: 6px;
+  border: 2px solid rgb(240, 218, 117);
   padding: 7px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  letter-spacing: 2px;
 }
