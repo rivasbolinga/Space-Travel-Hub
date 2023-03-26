@@ -30,14 +30,11 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Clone this repository](#clone-this-repository)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run project](#run-project)
-    - [Open page in browser](#open-page-in-browser)
+    - [Run tests](#run-project)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -78,23 +75,26 @@ You can see the live version 📍 [here](https://space-travel-hub-react-redux.ne
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
 To get a local copy up and running, follow these steps.
+
+
+<!-- PREREQUISITES -->
 
 ### Prerequisites
 
-In order to run this project, you need:
+In order to run this project you need:
 
 - [ ] A PC running any operating system like Windows, Linux, or MacOS
 - [ ] An Internet connection
 - [ ] Git installed
 - [ ] Webpack installed
 - [ ] Knowledge of some basic Git commands
+
+<!-- SETUP -->
 
 ### Setup
 
@@ -103,26 +103,36 @@ In order to run this project, you need:
 
 
 ```
-
-git clone git@github.com:rivasbolinga/Space-Travel-Hub.git
+git clone https://github.com/rivasbolinga/redux-toolkit.git
 ```
-
 
 - [ ] Open the file in your code editor
+  
+<!-- INSTALL -->
 
+### Install
 
+Install this project with:
 
-###  Instal:
 ```
-
 npm install
 ```
 
+###  Instal linters for React and Redux:
 
 Here the link to install your linters: https://github.com/microverseinc/linters-config
 
+<!-- USAGE -->
 
-###  Run test linters:
+### Usage
+To run the project, execute the following command:
+
+```
+npm start
+```
+<!-- RUN TESTS -->
+
+###  Run tests
 
 To run Stylelint and ESLint tests, run the following commands respectively:
 
@@ -132,15 +142,7 @@ npx stylelint "**/*.{css,scss}"
 
 ```
 npx eslint "**/*.{js,jsx}"
-
 ```
-###  Live:
-
-```
-npm start
-
-```
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
