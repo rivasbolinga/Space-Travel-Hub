@@ -10,7 +10,7 @@
 
  <a name="about-project"></a>
 <!-- PROJECT DESCRIPTION -->
-**SPACE TRAVEL HUB** is a webapp where your can read about our rockets, missions and rockets and you can book your favourite ones and store them in your profile.
+**SPACE TRAVEL HUB** is a webapp where you can read about our rockets, missions, and rockets and you can book your favourite ones and store them in your profile.
 
 ![laptop](https://user-images.githubusercontent.com/103900838/227567521-4a59b1d3-e582-4898-b1c6-004629c40ce4.png)
 
