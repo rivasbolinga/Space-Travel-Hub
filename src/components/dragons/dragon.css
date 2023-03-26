@@ -3,4 +3,5 @@ body {
   background-image: url('https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_1280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }

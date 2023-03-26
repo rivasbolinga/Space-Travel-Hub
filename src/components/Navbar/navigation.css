@@ -42,3 +42,7 @@
 a {
   color: rgb(220, 135, 50);
 }
+
+a:hover {
+  filter: drop-shadow(8px 4px 8px rgb(255, 251, 4));
+}
