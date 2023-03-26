@@ -74,7 +74,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://fastidious-sable-3bb07a.netlify.app/)
+You can see the live version 📍 [here](https://space-travel-hub-react-redux.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
