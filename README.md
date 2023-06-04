@@ -10,7 +10,7 @@
 
  <a name="about-project"></a>
 <!-- PROJECT DESCRIPTION -->
-**SPACE TRAVEL HUB** is a webapp where you can read about our rockets, missions, and rockets and you can book your favourite ones and store them in your profile.
+The primary goal of Space Travel Hub is to provide visitors with a comprehensive resource for all things related to space exploration. The website boasts a vast array of content, ranging from in-depth articles and news updates to captivating imagery and videos from space missions. Whether users are space enthusiasts, researchers, or simply curious individuals, they can find a wealth of information and entertainment within the site.
 
 ![laptop](https://user-images.githubusercontent.com/103900838/227567521-4a59b1d3-e582-4898-b1c6-004629c40ce4.png)
 
