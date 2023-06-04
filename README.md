@@ -101,7 +101,7 @@ In order to run this project you need:
 
 
 ```
-git clone https://github.com/rivasbolinga/redux-toolkit.git
+git clone https://github.com/rivasbolinga/Space-Travel-Hub.git
 ```
 
 - [ ] Open the file in your code editor
