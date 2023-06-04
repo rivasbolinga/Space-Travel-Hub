@@ -166,7 +166,7 @@ npx eslint "**/*.{js,jsx}"
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **mobile version**
+- [ ] **Mobile version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
